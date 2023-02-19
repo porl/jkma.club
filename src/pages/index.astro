@@ -1,18 +1,17 @@
 ---
-import "@fontsource/inter/variable.css";
 import Compatibility from "~/components/compatibility.astro";
-import Features from "~/components/features.astro";
+import Classes from "~/components/classes.astro";
 import Footer from "~/components/footer.astro";
 import Header from "~/components/header.astro";
-import Intro from "~/components/intro.astro";
+import AboutUs from "../components/about-us.astro";
 import Showcase from "~/components/showcase.astro";
 import Splash from "~/components/splash.astro";
 import "~/styles/index.css";
 
-const { generator, site } = Astro;
-const image = new URL("social.jpg", site);
 const description =
-  "Build fast websites, faster. Astro is a new kind of site builder for the modern web. Lightning-fast performance meets powerful developer experience.";
+  'Jita Kyoei Martial Arts practices the fundamental principle of Jita Kyoei - "Mutual Benefit and Welfare". ' +
+  'We cater for everyone ages five and up, of all fitness and experience levels. ' +
+  'Come along and see what the fuss is about, your first week is free!';
 ---
 
 <!DOCTYPE html>
@@ -21,18 +20,14 @@ const description =
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <meta name="generator" content={generator} />
 
-    <title>Astro Landing Page</title>
+    <title>JKMA - Jita Kyoei Martial Arts</title>
     <meta name="description" content={description} />
 
     <!-- social media -->
-    <meta property="og:title" content="Astro" />
+    <meta property="og:title" content="JKMA" />
     <meta property="og:type" content="website" />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content={image} />
-    <meta property="og:url" content={site} />
-    <meta name="twitter:card" content="summary_large_image" />
 
     <!-- initialize theme -->
     <script is:inline>
@@ -64,8 +59,8 @@ const description =
     <Header />
     <Splash />
     <div class="space-y-24 px-8 py-32">
-      <Intro />
-      <Features />
+      <AboutUs />
+      <Classes />
       <Compatibility />
       <Showcase />
     </div>

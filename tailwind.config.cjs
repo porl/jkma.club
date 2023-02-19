@@ -1,3 +1,4 @@
+const colors = require("tailwindcss/colors");
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
@@ -8,6 +9,7 @@ module.exports = {
         sans: ["InterVariable", ...defaultTheme.fontFamily.sans],
       },
       colors: {
+        gray: colors.neutral,
         primary: "var(--color-primary)",
         secondary: "var(--color-secondary)",
       },

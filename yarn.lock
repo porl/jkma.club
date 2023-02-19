@@ -457,15 +457,15 @@
   resolved "https://registry.yarnpkg.com/@fontsource/cinzel/-/cinzel-4.5.10.tgz#82dbd60f49645268d363495f1a9382159b25c699"
   integrity sha512-1r5JL+PotA/hvdL9gE/kDmu6nyxWCWmHD5C27PT+G1gi0wu2EhINvL64F1jeN5jE+ekXTyuXCLzMDMRyPABJ2g==
 
-"@fontsource/inter@^4.5.14":
-  version "4.5.15"
-  resolved "https://registry.yarnpkg.com/@fontsource/inter/-/inter-4.5.15.tgz#eed1873d68755d3b52d6fcfcfa3493118430a512"
-  integrity sha512-FzleM9AxZQK2nqsTDtBiY0PMEVWvnKnuu2i09+p6DHvrHsuucoV2j0tmw+kAT3L4hvsLdAIDv6MdGehsPIdT+Q==
-
 "@fontsource/maven-pro@^4.5.13":
   version "4.5.13"
   resolved "https://registry.yarnpkg.com/@fontsource/maven-pro/-/maven-pro-4.5.13.tgz#314feaa97c28bb4f2e813bf40b463f650d9995fc"
   integrity sha512-E7Xs3hcyoyXnajR67tVwbERDeaxRmAbAjjI2gR2Frnb27Z1/YtKwsw8SX2ydfuTYd8d4m9Upol8+g0aNoAk2ZA==
+
+"@fontsource/nunito@^4.5.12":
+  version "4.5.12"
+  resolved "https://registry.yarnpkg.com/@fontsource/nunito/-/nunito-4.5.12.tgz#3d34ede8677a57e1d25e9b30d9e57d620592ca3d"
+  integrity sha512-Li90TCJha1E+nBgP51GjcIGV6LxyQi7QisW8KZ4kpz5mpnQc1HmsJWVr9fyTMItUF/OuZUOfEazenXjaY6qRpQ==
 
 "@jridgewell/gen-mapping@^0.1.0":
   version "0.1.1"
