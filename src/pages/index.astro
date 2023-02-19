@@ -1,12 +1,15 @@
 ---
-import Classes from "~/components/classes.astro";
-import Footer from "~/components/footer.astro";
-import Header from "~/components/header.astro";
-import AboutUs from "../components/about-us.astro";
-import Showcase from "~/components/showcase.astro";
-import Splash from "~/components/splash.astro";
-import Timetable from "~/components/timetable.astro";
-import "~/styles/index.css";
+import Classes from "~/components/classes.astro"
+import Footer from "~/components/footer.astro"
+import Header from "~/components/header.astro"
+import AboutUs from "../components/about-us.astro"
+import ContactUs from "../components/contact-us.astro"
+import Splash from "~/components/splash.astro"
+import Timetable from "~/components/timetable.astro"
+import Location from "../components/location.astro"
+import Pricing from "../components/pricing.astro"
+
+import "~/styles/index.css"
 
 const description =
   'Jita Kyoei Martial Arts practices the fundamental principle of Jita Kyoei - "Mutual Benefit and Welfare". ' +
@@ -62,8 +65,9 @@ const description =
       <AboutUs />
       <Timetable />
       <Classes />
-      <Showcase />
+      <Pricing />
+      <Location />
+      <ContactUs />
     </div>
-    <Footer />
   </body>
 </html>

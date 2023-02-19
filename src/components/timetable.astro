@@ -1,82 +1,25 @@
 ---
 import TimetableDay from "./timetable-day.astro";
 import ContentSection from "~/components/content-section.astro";
-import type { TimetableClass } from "~/types";
 
-const frameworks: Array<TimetableClass> = [
-  {
-    title: "React",
-    icon: "frameworks/react",
-    url: "https://reactjs.org/",
-  },
-  {
-    title: "Preact",
-    icon: "frameworks/preact",
-    url: "https://preactjs.com/",
-  },
-  {
-    title: "Svelte",
-    icon: "frameworks/svelte",
-    url: "https://svelte.dev/",
-  },
-  {
-    title: "Vue",
-    icon: "frameworks/vue",
-    url: "https://vuejs.org/",
-  },
-  {
-    title: "Solid",
-    icon: "frameworks/solid",
-    url: "https://www.solidjs.com/",
-  },
-  {
-    title: "Lit",
-    icon: "frameworks/lit",
-    url: "https://lit.dev/",
-  },
-];
-
-const platforms: Array<TimetableClass> = [
-  {
-    title: "Netlify",
-    icon: "platforms/netlify",
-    url: "https://www.netlify.com/",
-  },
-  {
-    title: "Vercel",
-    icon: "platforms/vercel",
-    url: "https://vercel.com/",
-  },
-  {
-    title: "Cloudflare",
-    icon: "fa-brands:cloudflare",
-    url: "https://pages.cloudflare.com/",
-  },
-  {
-    title: "Render",
-    icon: "platforms/render",
-    url: "https://render.com/",
-  },
-  {
-    title: "GitHub",
-    icon: "fa-brands:github",
-    url: "https://pages.github.com/",
-  },
-  {
-    title: "GitLab",
-    icon: "fa-brands:gitlab",
-    url: "https://docs.gitlab.com/ee/user/project/pages/",
-  },
-];
+import {fridayClasses, mondayClasses, sundayClasses, wednesdayClasses} from "../data/classes"
 ---
 
 <ContentSection title="Timetable" id="timetable">
   <TimetableDay
-    items={frameworks}
+    items={mondayClasses}
     title="Monday"
   />
   <TimetableDay
-    items={platforms}
-    title="Tuesday"
+      items={wednesdayClasses}
+      title="Wednesday"
+  />
+  <TimetableDay
+      items={fridayClasses}
+      title="Friday"
+  />
+  <TimetableDay
+      items={sundayClasses}
+      title="Sunday"
   />
 </ContentSection>

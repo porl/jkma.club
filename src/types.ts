@@ -1,16 +1,12 @@
-export interface TimetableDay {
-  title: string;
-  classes: TimetableClass[]
-}
-
 export interface TimetableClass {
-  class: ClassItem,
+  class: Class,
   time: string
 }
 
-export interface ClassItem {
-  description: string;
+export interface Class {
+  id: string;
   title: string;
+  description: string;
 }
 
 export interface FooterLink {
