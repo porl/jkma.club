@@ -1,9 +1,9 @@
 ---
-import CompatibilityList from "~/components/compatibility-list.astro";
+import TimetableDay from "./timetable-day.astro";
 import ContentSection from "~/components/content-section.astro";
-import type { CompatibilityItem } from "~/types";
+import type { TimetableClass } from "~/types";
 
-const frameworks: Array<CompatibilityItem> = [
+const frameworks: Array<TimetableClass> = [
   {
     title: "React",
     icon: "frameworks/react",
@@ -36,7 +36,7 @@ const frameworks: Array<CompatibilityItem> = [
   },
 ];
 
-const platforms: Array<CompatibilityItem> = [
+const platforms: Array<TimetableClass> = [
   {
     title: "Netlify",
     icon: "platforms/netlify",
@@ -70,20 +70,13 @@ const platforms: Array<CompatibilityItem> = [
 ];
 ---
 
-<ContentSection title="Compatibility" id="compatibility">
-  <Fragment slot="lead">
-    Astro <span class="text-primary">plays nice</span>. Bring your own UI{" "}
-    <span class="text-primary">framework</span>
-    and deploy to your favorite <span class="text-primary">platform</span>.
-  </Fragment>
-  <CompatibilityList
+<ContentSection title="Timetable" id="timetable">
+  <TimetableDay
     items={frameworks}
-    title="Frameworks"
-    url="https://docs.astro.build/core-concepts/framework-components/"
+    title="Monday"
   />
-  <CompatibilityList
+  <TimetableDay
     items={platforms}
-    title="Platforms"
-    url="https://docs.astro.build/guides/deploy/"
+    title="Tuesday"
   />
 </ContentSection>

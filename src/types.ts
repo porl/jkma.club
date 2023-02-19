@@ -1,12 +1,15 @@
-export interface CompatibilityItem {
-  icon: string;
+export interface TimetableDay {
   title: string;
-  url: string;
+  classes: TimetableClass[]
 }
 
-export interface FeatureItem {
+export interface TimetableClass {
+  class: ClassItem,
+  time: string
+}
+
+export interface ClassItem {
   description: string;
-  icon: string;
   title: string;
 }
 

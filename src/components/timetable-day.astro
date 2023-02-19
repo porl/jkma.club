@@ -1,11 +1,9 @@
 ---
-import { Icon } from "astro-icon";
-import type { CompatibilityItem } from "~/types";
+import type {TimetableClass} from "../types"
 
 export interface Props {
-  items: Array<CompatibilityItem>;
+  items: Array<TimetableClass>;
   title: string;
-  url: string;
 }
 
 const { items, title, url } = Astro.props;
@@ -23,7 +21,6 @@ const { items, title, url } = Astro.props;
         items.map((item) => (
           <li>
             <a class="flex flex-col items-center gap-2" href={item.url}>
-              <Icon class="h-12" name={item.icon} />
               <span>{item.title}</span>
             </a>
           </li>
