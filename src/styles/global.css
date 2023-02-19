@@ -12,6 +12,6 @@ a,
   @apply bg-gradient-to-br from-indigo-500 via-fuchsia-500 to-pink-500;
 }
 
-.heading-text {
+.heading-text, h1, h2, h3, h4, h5, h6 {
   font-family: "Maven Pro", sans-serif;
 }

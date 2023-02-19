@@ -1,5 +1,5 @@
 ---
-import HeroImage from "~/components/hero-image.astro"
+import HeroImageXFade from "./hero-image-x-fade.astro"
 
 const widths = [450, 800]
 const sizes = "(min-width: 640px) 42vw, 67vw"
@@ -7,7 +7,7 @@ const sizes = "(min-width: 640px) 42vw, 67vw"
 
 <section class="relative h-full bg-black">
   <div id="splash-bg" class="absolute inset-0 opacity-30">
-    <HeroImage />
+    <HeroImageXFade />
   </div>
   <div class="relative grid h-full place-items-center">
     <div
