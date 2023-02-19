@@ -9,7 +9,6 @@ a,
 .btn {
   @apply transition-colors duration-200;
   @apply hover:text-secondary;
-  @apply focus:outline-none;
 }
 
 .heading-text, h1, h2, h3, h4, h5, h6 {
