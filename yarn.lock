@@ -452,6 +452,11 @@
   resolved "https://registry.yarnpkg.com/@esbuild/win32-x64/-/win32-x64-0.16.17.tgz#c5a1a4bfe1b57f0c3e61b29883525c6da3e5c091"
   integrity sha512-y+EHuSchhL7FjHgvQL/0fnnFmO4T1bhvWANX6gcnqTjtnKWbTvUMCpGnv2+t+31d7RzyEAYAd4u2fnIhHL6N/Q==
 
+"@fontsource/cinzel@^4.5.10":
+  version "4.5.10"
+  resolved "https://registry.yarnpkg.com/@fontsource/cinzel/-/cinzel-4.5.10.tgz#82dbd60f49645268d363495f1a9382159b25c699"
+  integrity sha512-1r5JL+PotA/hvdL9gE/kDmu6nyxWCWmHD5C27PT+G1gi0wu2EhINvL64F1jeN5jE+ekXTyuXCLzMDMRyPABJ2g==
+
 "@fontsource/inter@^4.5.14":
   version "4.5.15"
   resolved "https://registry.yarnpkg.com/@fontsource/inter/-/inter-4.5.15.tgz#eed1873d68755d3b52d6fcfcfa3493118430a512"

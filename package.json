@@ -25,6 +25,7 @@
     "tailwindcss-fluid-type": "^2.0.3"
   },
   "dependencies": {
+    "@fontsource/cinzel": "^4.5.10",
     "@fontsource/inter": "^4.5.14",
     "@fontsource/maven-pro": "^4.5.13",
     "micromodal": "^0.4.10",
