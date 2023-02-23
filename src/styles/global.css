@@ -19,8 +19,3 @@ a,
 .title-text {
   font-family: Cinzel, serif;
 }
-
-/* fix offset of anchor targets from header */
-html {
-  scroll-padding-top: 6rem;
-}

@@ -1,14 +1,22 @@
 ---
 import { Icon } from "astro-icon";
 import ContentSection from "~/components/content-section.astro";
+import { Picture } from "@astrojs/image/components"
+import jiujitsu from "../assets/jiujitsu.jpg"
+
+const widths = [800, 1200]
+const sizes = "100%"
 ---
 
-<ContentSection title="About Us" id="about-us">
-  <Icon slot="eyebrow" name="jkma_logo" class="h-32" />
-  <Fragment slot="lead">
-    Welcome To Jita Kyoei Martial Arts
-  </Fragment>
+<ContentSection title="Welcome to Jita Kyoei Martial Arts" id="welcome">
   <Fragment>
+    <Picture
+      class="object-cover w-full h-full x-fade-first"
+      src={jiujitsu}
+      widths={widths}
+      sizes={sizes}
+      alt="Open Mat"
+    />
     <p>
       Located in the Niagara Park Stadium on the Central Coast of New South Wales, Jita Kyoei Martial Arts practices the fundamental principle of Jita Kyoei - <span class="font-bold">Mutual Benefit and Welfare</span>.
     </p>
@@ -22,7 +30,7 @@ import ContentSection from "~/components/content-section.astro";
   <div class="grid grid-cols-1 gap-2">
     <a
       href="#contact-us"
-      class="flex items-center justify-center gap-3 border rounded-xl border-default px-6 py-4"
+      class="flex items-center justify-center gap-3 border rounded border-current bg-offset px-4 py-2"
     >
       <Icon pack="mdi" name="email" class="h-8" />
       <span>Contact Us</span>

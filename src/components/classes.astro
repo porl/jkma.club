@@ -1,15 +1,27 @@
 ---
 import { Icon } from "astro-icon";
+import { Picture } from "@astrojs/image/components"
 import ContentSection from "~/components/content-section.astro";
 import {classes} from "../data/classes"
+
+const widths = [800, 1200]
+const sizes = "100%"
 ---
 
 <ContentSection title="Classes" id="classes">
   <ul class="grid max-w-6xl grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 scroll-pad">
     {
-      classes.map(({ id, title, description}) => (
+      classes.map(({ id, title, description, image}) => (
         <li id={id} class="flex flex-col gap-4">
           <p class="font-bold text-2xl">{title}</p>
+          <Picture
+            class="object-cover w-full h-full x-fade-first"
+            src={image}
+            widths={widths}
+            sizes={sizes}
+            aspectRatio={16/9}
+            alt="Open Mat"
+          />
           <Fragment set:html={description} />
         </li>
       ))

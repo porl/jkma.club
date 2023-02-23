@@ -2,6 +2,7 @@
 import { Picture } from "@astrojs/image/components"
 import splashAdults from "../assets/splash/splash_adults.jpg"
 import splashKids from "../assets/splash/splash_kids.jpg"
+import splashKata from "../assets/splash/splash_kata.jpg"
 
 const widths = [800, 1200]
 const sizes = "100vw"
@@ -15,11 +16,18 @@ const sizes = "100vw"
       alt="Adults and Teens Judo"
   />
   <Picture
-      class="object-cover w-full h-full x-fade-last"
+      class="object-cover w-full h-full x-fade-second"
       src={splashAdults}
       widths={widths}
       sizes={sizes}
       alt="Adults and Teens Judo"
+  />
+  <Picture
+    class="object-cover w-full h-full x-fade-third"
+    src={splashKata}
+    widths={widths}
+    sizes={sizes}
+    alt="Kata Competition"
   />
 </div>
 
@@ -33,23 +41,31 @@ const sizes = "100vw"
   .x-fade-first {
     position: absolute;
     animation-name: x-fade;
-    animation-duration: 10s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
   }
 
-  .x-fade-last {
+  .x-fade-second {
     position: absolute;
     animation-name: x-fade;
-    animation-duration: 10s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
     animation-delay: 5s;
+  }
+
+  .x-fade-third {
+    position: absolute;
+    animation-name: x-fade;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-delay: 10s;
   }
 
   @keyframes x-fade {
     0% {opacity: 1;}
     20% {opacity: 1;}
-    50% {opacity: 0;}
-    70% {opacity: 0;}
+    33% {opacity: 0;}
+    87% {opacity: 0;}
     100% {opacity: 1;}
   }
 
